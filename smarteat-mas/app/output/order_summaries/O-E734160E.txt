@@ -1,0 +1,16 @@
+Order ID: O-E734160E
+User ID: U001
+User Name: Ahamed
+Restaurant: Malabe Kottu House
+Total: 1200.0 LKR
+Status: DRAFT
+Items: [{'menu_id': 'M001', 'restaurant_id': 'R001', 'item_name': 'Chicken Kottu', 'unit_price': 1200.0, 'quantity': 1, 'line_total': 1200.0, 'category': 'Main'}]
+LLM Note: Short grounded note:
+
+Dear Ahamed, your draft order for Chicken Kottu at Malabe Kottu House has been placed with a total of LKR 1200.0 and will be delivered to you on [insert date]. Kindly ensure that you have sufficient funds available in your account.
+Notification Message: Hello Ahamed, your SmartEat order draft O-E734160E has been created successfully.
+Restaurant: Malabe Kottu House
+Items:
+- Chicken Kottu x1 = 1200.0 LKR
+Total: 1200.0 LKR
+Status: DRAFT

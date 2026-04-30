@@ -1,0 +1,17 @@
+Order ID: O-1FEA5865
+User ID: U001
+Restaurant: Malabe Kottu House
+Total: 1200.0 LKR
+Status: DRAFT
+Items: [{'menu_id': 'M001', 'restaurant_id': 'R001', 'item_name': 'Chicken Kottu', 'unit_price': 1200.0, 'quantity': 1, 'line_total': 1200.0, 'category': 'Main'}]
+Notification Message: Dear [user_id],
+
+Thank you for placing your order with Malabe Kottu House. Your final bill is as follows:
+
+- Chicken Kottu (M001): 1200.0 LKR
+- Total: 1200.0 LKR
+
+Please note that this is a draft and we will process your payment once the order has been confirmed by our restaurant team. If you have any issues or concerns, feel free to contact us at [restaurant_email]. We are here to assist you.
+
+Best regards,
+[Your Name]

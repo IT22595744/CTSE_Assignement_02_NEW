@@ -1,0 +1,34 @@
+[
+  {
+    "user_id": "U001",
+    "name": "Ahamed",
+    "preferred_cuisine": "Sri Lankan",
+    "dietary_preference": "halal",
+    "budget_preference": 2500,
+    "default_location": "Malabe"
+  },
+  {
+    "user_id": "U002",
+    "name": "Fathima",
+    "preferred_cuisine": "Indian",
+    "dietary_preference": "vegetarian",
+    "budget_preference": 1800,
+    "default_location": "Kottawa"
+  },
+  {
+    "user_id": "U003",
+    "name": "Nimal",
+    "preferred_cuisine": "Chinese",
+    "dietary_preference": "none",
+    "budget_preference": 3000,
+    "default_location": "Nugegoda"
+  },
+  {
+    "user_id": "U004",
+    "name": "Sara",
+    "preferred_cuisine": "Arabian",
+    "dietary_preference": "halal",
+    "budget_preference": 3500,
+    "default_location": "Malabe"
+  }
+]

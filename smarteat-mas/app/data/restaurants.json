@@ -1,0 +1,52 @@
+[
+  {
+    "restaurant_id": "R001",
+    "name": "Malabe Kottu House",
+    "cuisine": "Sri Lankan",
+    "location": "Malabe",
+    "is_halal": true,
+    "is_vegetarian_friendly": false,
+    "is_open": true,
+    "average_price": 1200
+  },
+  {
+    "restaurant_id": "R002",
+    "name": "Green Leaf Veg",
+    "cuisine": "Indian",
+    "location": "Kottawa",
+    "is_halal": false,
+    "is_vegetarian_friendly": true,
+    "is_open": true,
+    "average_price": 900
+  },
+  {
+    "restaurant_id": "R003",
+    "name": "Dragon Wok",
+    "cuisine": "Chinese",
+    "location": "Nugegoda",
+    "is_halal": false,
+    "is_vegetarian_friendly": true,
+    "is_open": true,
+    "average_price": 1500
+  },
+  {
+    "restaurant_id": "R004",
+    "name": "Arabian Nights",
+    "cuisine": "Arabian",
+    "location": "Malabe",
+    "is_halal": true,
+    "is_vegetarian_friendly": false,
+    "is_open": true,
+    "average_price": 2200
+  },
+  {
+    "restaurant_id": "R005",
+    "name": "Rice Bowl Express",
+    "cuisine": "Sri Lankan",
+    "location": "Malabe",
+    "is_halal": true,
+    "is_vegetarian_friendly": true,
+    "is_open": false,
+    "average_price": 1100
+  }
+]

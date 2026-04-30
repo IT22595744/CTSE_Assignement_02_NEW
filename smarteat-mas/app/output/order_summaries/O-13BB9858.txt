@@ -1,0 +1,6 @@
+Order ID: O-13BB9858
+User ID: U001
+Restaurant: Malabe Kottu House
+Total: 1200.0 LKR
+Status: DRAFT
+Items: [{'menu_id': 'M001', 'restaurant_id': 'R001', 'item_name': 'Chicken Kottu', 'unit_price': 1200.0, 'quantity': 1, 'line_total': 1200.0, 'category': 'Main'}]

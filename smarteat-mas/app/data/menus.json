@@ -1,0 +1,82 @@
+[
+  {
+    "menu_id": "M001",
+    "restaurant_id": "R001",
+    "item_name": "Chicken Kottu",
+    "price": 1200,
+    "available": true,
+    "category": "Main"
+  },
+  {
+    "menu_id": "M002",
+    "restaurant_id": "R001",
+    "item_name": "Cheese Kottu",
+    "price": 1400,
+    "available": true,
+    "category": "Main"
+  },
+  {
+    "menu_id": "M003",
+    "restaurant_id": "R001",
+    "item_name": "Egg Kottu",
+    "price": 1000,
+    "available": false,
+    "category": "Main"
+  },
+  {
+    "menu_id": "M004",
+    "restaurant_id": "R002",
+    "item_name": "Vegetable Biryani",
+    "price": 950,
+    "available": true,
+    "category": "Main"
+  },
+  {
+    "menu_id": "M005",
+    "restaurant_id": "R002",
+    "item_name": "Paneer Curry",
+    "price": 850,
+    "available": true,
+    "category": "Main"
+  },
+  {
+    "menu_id": "M006",
+    "restaurant_id": "R003",
+    "item_name": "Chicken Fried Rice",
+    "price": 1600,
+    "available": true,
+    "category": "Main"
+  },
+  {
+    "menu_id": "M007",
+    "restaurant_id": "R003",
+    "item_name": "Veg Noodles",
+    "price": 1300,
+    "available": true,
+    "category": "Main"
+  },
+  {
+    "menu_id": "M008",
+    "restaurant_id": "R004",
+    "item_name": "Chicken Shawarma Plate",
+    "price": 1900,
+    "available": true,
+    "category": "Main"
+  },
+  {
+    "menu_id": "M009",
+    "restaurant_id": "R004",
+    "item_name": "Mixed Grill",
+    "price": 3200,
+    "available": true,
+    "category": "Main"
+  },
+  {
+    "menu_id": "M010",
+    "restaurant_id": "R005",
+    "item_name": "Rice and Curry",
+    "price": 900,
+    "available": true,
+    "category": "Main"
+  }
+]
