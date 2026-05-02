@@ -1,0 +1,14 @@
+Order ID: O-AF7F5903
+User ID: U003
+User Name: Nimal
+Restaurant: Dragon Wok
+Total: 1300.0 LKR
+Status: DRAFT
+Items: [{'menu_id': 'M007', 'restaurant_id': 'R003', 'item_name': 'Veg Noodles', 'unit_price': 1300.0, 'quantity': 1, 'line_total': 1300.0, 'category': 'Main'}]
+LLM Note: LLM note generation skipped due to local model issue.
+Notification Message: Hello Nimal, your SmartEat order draft O-AF7F5903 has been created successfully.
+Restaurant: Dragon Wok
+Items:
+- Veg Noodles x1 = 1300.0 LKR
+Total: 1300.0 LKR
+Status: DRAFT

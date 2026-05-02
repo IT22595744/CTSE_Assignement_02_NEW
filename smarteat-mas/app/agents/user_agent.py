@@ -56,12 +56,17 @@ def run_user_agent(state: SmartEatState) -> SmartEatState:
 
         extracted = extract_constraints_from_query(state["user_query"])
 
+        dietary_preference = (profile.get("dietary_preference") or "").strip().lower()
+
+        profile_halal = True if dietary_preference == "halal" else None
+        profile_vegetarian = True if dietary_preference == "vegetarian" else None
+
         merged_constraints = {
             "max_budget": extracted["max_budget"] if extracted["max_budget"] is not None else profile.get("budget_preference"),
             "cuisine": extracted["cuisine"] if extracted["cuisine"] else profile.get("preferred_cuisine"),
             "location": extracted["location"] if extracted["location"] else profile.get("default_location"),
-            "halal": extracted["halal"] if extracted["halal"] is not None else (profile.get("dietary_preference") == "halal"),
-            "vegetarian": extracted["vegetarian"] if extracted["vegetarian"] is not None else (profile.get("dietary_preference") == "vegetarian"),
+            "halal": extracted["halal"] if extracted["halal"] is not None else profile_halal,
+            "vegetarian": extracted["vegetarian"] if extracted["vegetarian"] is not None else profile_vegetarian,
         }
 
         state["user_profile"] = profile
