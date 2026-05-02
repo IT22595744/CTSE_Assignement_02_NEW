@@ -164,13 +164,13 @@ with st.sidebar:
         st.session_state["user_id_value"] = "U001"
         st.session_state["query_value"] = "Find me an Arabian vegetarian halal meal under 500 in Kottawa"
 
-    if st.button("Failure 3 — Closed Restaurant Scenario"):
-        st.session_state["user_id_value"] = "U001"
-        st.session_state["query_value"] = "Find me a halal Sri Lankan meal under 1200 in Malabe from Rice Bowl Express"
+    # if st.button("Failure 3 — Closed Restaurant Scenario"):
+    #     st.session_state["user_id_value"] = "U001"
+    #     st.session_state["query_value"] = "Find me a halal Sri Lankan meal under 1200 in Malabe from Rice Bowl Express"
 
-    if st.button("Failure 4 — Unknown User"):
-        st.session_state["user_id_value"] = "U999"
-        st.session_state["query_value"] = "Find me a halal Sri Lankan meal under 2500 in Malabe"
+    # if st.button("Failure 4 — Unknown User"):
+    #     st.session_state["user_id_value"] = "U999"
+    #     st.session_state["query_value"] = "Find me a halal Sri Lankan meal under 2500 in Malabe"
 
     st.markdown("---")
     st.markdown(

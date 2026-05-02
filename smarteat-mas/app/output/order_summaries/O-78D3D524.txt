@@ -1,0 +1,14 @@
+Order ID: O-78D3D524
+User ID: U001
+User Name: Ahamed
+Restaurant: Malabe Kottu House
+Total: 1200.0 LKR
+Status: DRAFT
+Items: [{'menu_id': 'M001', 'restaurant_id': 'R001', 'item_name': 'Chicken Kottu', 'unit_price': 1200.0, 'quantity': 1, 'line_total': 1200.0, 'category': 'Main'}]
+LLM Note: LLM note generation skipped due to local model issue.
+Notification Message: Hello Ahamed, your SmartEat order draft O-78D3D524 has been created successfully.
+Restaurant: Malabe Kottu House
+Items:
+- Chicken Kottu x1 = 1200.0 LKR
+Total: 1200.0 LKR
+Status: DRAFT

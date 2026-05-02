@@ -1,0 +1,14 @@
+Order ID: O-EAE0E072
+User ID: U002
+User Name: Fathima
+Restaurant: Green Leaf Veg
+Total: 850.0 LKR
+Status: DRAFT
+Items: [{'menu_id': 'M005', 'restaurant_id': 'R002', 'item_name': 'Paneer Curry', 'unit_price': 850.0, 'quantity': 1, 'line_total': 850.0, 'category': 'Main'}]
+LLM Note: LLM note generation skipped due to local model issue.
+Notification Message: Hello Fathima, your SmartEat order draft O-EAE0E072 has been created successfully.
+Restaurant: Green Leaf Veg
+Items:
+- Paneer Curry x1 = 850.0 LKR
+Total: 850.0 LKR
+Status: DRAFT

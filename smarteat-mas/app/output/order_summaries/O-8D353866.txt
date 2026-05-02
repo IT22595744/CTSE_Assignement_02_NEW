@@ -1,0 +1,14 @@
+Order ID: O-8D353866
+User ID: U004
+User Name: Sara
+Restaurant: Arabian Nights
+Total: 1900.0 LKR
+Status: DRAFT
+Items: [{'menu_id': 'M008', 'restaurant_id': 'R004', 'item_name': 'Chicken Shawarma Plate', 'unit_price': 1900.0, 'quantity': 1, 'line_total': 1900.0, 'category': 'Main'}]
+LLM Note: LLM note generation skipped due to local model issue.
+Notification Message: Hello Sara, your SmartEat order draft O-8D353866 has been created successfully.
+Restaurant: Arabian Nights
+Items:
+- Chicken Shawarma Plate x1 = 1900.0 LKR
+Total: 1900.0 LKR
+Status: DRAFT
