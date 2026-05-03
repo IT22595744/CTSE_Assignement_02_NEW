@@ -18,6 +18,15 @@ This repository contains a small multi-agent system that simulates restaurant or
 - `app/output/order_summaries/` - generated order summary outputs.
 - `tests/` - unit and integration tests.
 
+
+## Features
+
+- Multi-agent restaurant ordering workflow with user, restaurant, order, and notification agents
+- Local LLM integration for prompt-based behavior
+- Simple Streamlit UI for demo interactions
+- Built-in tests covering agent behavior, notifications, and workflow logic
+- Output generation for order summaries in `app/output/order_summaries/`
+
 ## Requirements
 
 - Python 3.10 or newer
