@@ -1,82 +1,87 @@
-
 # SmartEat MAS (Multi-Agent System)
 
-Lightweight multi-agent restaurant ordering demo used for CTSE assignments.
-
-## Summary
-
-This repository contains a small multi-agent system that simulates restaurant ordering, notifications, and simple workflows. It is implemented in Python and includes tests and a minimal Streamlit UI.
-
-## Contents
-
-- `app/` - main application code, agents, API, tools, and UI.
-- `app/data/` - sample `menus.json`, `restaurants.json`, and `users.json`.
-- `app/database/` - database helpers and initialization scripts.
-- `app/graph/` - state and workflow logic for the agent graph.
-- `app/llm/` - small client wrappers for local LLM usage.
-- `app/logging/` - tracing and logging utilities.
-- `app/output/order_summaries/` - generated order summary outputs.
-- `tests/` - unit and integration tests.
-
-
-## Features
-
-- Multi-agent restaurant ordering workflow with user, restaurant, order, and notification agents
-- Local LLM integration for prompt-based behavior
-- Simple Streamlit UI for demo interactions
-- Built-in tests covering agent behavior, notifications, and workflow logic
-- Output generation for order summaries in `app/output/order_summaries/`
-
-## Requirements
-
-- Python 3.10 or newer
-- See `requirements.txt` for Python dependencies.
-
-## Quick setup
-
-1. Create and activate a virtual environment:
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
-2. Install dependencies:
-
-```powershell
-python -m pip install -r requirements.txt
-```
-
-3. (Optional) Create a `.env` file to add environment variables used by the app.
-
-## Running
-
-- Run the API (if available):
-
-```powershell
-python -m app.api.main
-```
-
-- Run the Streamlit UI (simple demo):
-
-```powershell
-streamlit run app/ui/streamlit_app.py
-```
-
-## Tests
-
-Run the test suite with `pytest` from the repository root:
-
-```powershell
-pytest -q
-```
-
-## Project notes
-
-- The agent implementations live under `app/agents/`.
-- Order output files are written to `app/output/order_summaries/`.
-- If you want me to explain a specific file, run tests, or fix failing tests, tell me which file or say "run tests".
+SmartEat MAS is a **locally hosted multi-agent food ordering assistant** developed for the **Current Trends in Software Engineering (CTSE) Assignment 2**.  
+The system demonstrates how multiple AI agents can collaborate to process a natural language food request, search local restaurant data, create an order draft, generate a user response, and record execution traces.
 
 ---
 
-Updated README to include setup and run instructions.
+## Project Overview
+
+This project reuses the **SmartEat food ordering domain** from Assignment 1 and extends it into a **Multi-Agent System (MAS)** architecture.
+
+The system is built entirely for **local execution** and uses:
+
+- **LangGraph** for multi-agent orchestration
+- **Ollama** for local Small Language Model (SLM) support
+- **SQLite** for local data storage
+- **FastAPI** for the local API
+- **Streamlit** for the demo UI
+- **Pytest** for evaluation and testing
+- **JSONL logging** for observability and execution tracing
+
+---
+
+## Multi-Agent Architecture
+
+SmartEat MAS contains **4 specialized agents**:
+
+1. **User Preference Agent**
+   - Loads user profile
+   - Extracts request constraints
+   - Merges user preferences
+
+2. **Restaurant Discovery Agent**
+   - Searches restaurants
+   - Filters by cuisine, budget, location, halal, and vegetarian requirements
+
+3. **Order Management Agent**
+   - Loads menu data
+   - Selects valid items
+   - Creates an order draft
+
+4. **Notification Agent**
+   - Generates the final response
+   - Saves notifications
+   - Writes order summary files
+
+All agents share a common global state object called **SmartEatState**, and the workflow is orchestrated using **LangGraph**.
+
+---
+
+## Features
+
+- Multi-agent food ordering workflow using **4 connected agents**
+- **LangGraph orchestration** with shared state passing
+- **Local Ollama model integration** for grounded agent reasoning
+- **Custom Python tools** for database and file interactions
+- **SQLite database** for users, restaurants, menu items, orders, and notifications
+- **FastAPI API** for local execution and Swagger testing
+- **Streamlit UI** for demo presentation
+- **JSONL trace logging** for observability
+- **Pytest-based testing and evaluation**
+- Local output generation for **order summaries** and **trace logs**
+
+---
+
+## Project Structure
+
+```text
+smarteat-mas/
+│
+├── app/
+│   ├── agents/                  # Agent implementations and prompt helpers
+│   ├── api/                     # FastAPI application
+│   ├── data/                    # Sample JSON seed data
+│   ├── database/                # SQLite DB helpers and initialization
+│   ├── graph/                   # LangGraph state and workflow
+│   ├── llm/                     # Ollama client wrapper
+│   ├── logging/                 # Trace logging utilities
+│   ├── output/order_summaries/  # Generated order summary files
+│   ├── tools/                   # Custom Python tools used by agents
+│   └── ui/                      # Streamlit demo UI
+│
+├── logs/                        # Generated trace.jsonl logs
+├── tests/                       # Unit and workflow tests
+├── requirements.txt
+├── .env
+└── README.md
